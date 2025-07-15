@@ -1,0 +1,144 @@
+.image-upload-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.image-upload-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.image-upload-header h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+.image-upload-header p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.file-input-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.file-input-label:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.image-preview {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.question-section {
+  margin-bottom: 20px;
+}
+
+.question-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.question-input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.analyze-button, .clear-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.analyze-button {
+  background: #28a745;
+  color: white;
+}
+
+.analyze-button:hover:not(:disabled) {
+  background: #218838;
+}
+
+.analyze-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.clear-button {
+  background: #dc3545;
+  color: white;
+}
+
+.clear-button:hover {
+  background: #c82333;
+}
+
+.analysis-result {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.analysis-result h3 {
+  margin: 0 0 15px 0;
+  color: #fff;
+}
+
+.analysis-content {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}

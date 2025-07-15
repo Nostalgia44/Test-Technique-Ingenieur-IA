@@ -92,7 +92,7 @@ def get_complete_page_content(url):
         lines = [line.strip() for line in full_text.split('\n') if line.strip()]
         clean_text = '\n'.join(lines)
         
-        return clean_text[:10000]  
+        return clean_text[:9500]  
     except Exception as e:
         return f"[Loading error: {e}]"
 
@@ -207,7 +207,7 @@ def chat():
                 )
                 # Debug: show first 50 chars of content and title
                 #print(result['content'][:50])
-                #print(result['title'])
+                print(result['title'])
                 context_parts.append(part)
             
             context = f"Web sources (query: '{search_query}'):\n\n" + "\n\n".join(context_parts)
